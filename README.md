@@ -2,6 +2,15 @@
 Snake game using OpenGL for graphics
 # About
 A 2D snake game that utilizes OpenGL
+# Visual Studio Installation
+1. Download .zip file
+2. Extract to desired directory
+3. Open Visual Studio
+4. Go to File->Open->Project/Solution
+5. Navigate to project folder
+6. Select project solution (Microsoft Visual Studio Solution file) and Open
+7. Set project configuration to Debug x86
+8. Run program
 # Play Settings
 - Walls
   - Standard in Snake
