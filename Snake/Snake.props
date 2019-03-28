@@ -1,8 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?> 
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
-  <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
-  <ItemDefinitionGroup />
-  <ItemGroup />
+  <PropertyGroup Label="UserMacros">
+    <SnakeProps>0.0.0.1</SnakeProps>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)Snake/inlcude;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Snake/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>glew32.lib;glew32s.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;freeglut.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SnakeProps">
+      <Value>$(SnakeProps)</Value>
+    </BuildMacro>
+  </ItemGroup>
 </Project>
