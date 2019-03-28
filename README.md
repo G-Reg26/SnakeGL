@@ -10,6 +10,7 @@ A 2D snake game that utilizes OpenGL
 5. Navigate to project folder
 6. Select project solution (Microsoft Visual Studio Solution file) and Open
 7. Set project configuration to Debug x86
+![Imgur](https://i.imgur.com/kPL7tkc.png)
 8. Run program
 # Play Settings
 - Walls
