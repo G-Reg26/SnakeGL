@@ -52,6 +52,7 @@ void Snake::Update(Apple & apple, const float &deltaTime)
 
 	if (m_updateTimer >= 0.1f)
 	{
+		// update positions
 		for (std::list<Block*>::iterator it = m_blocks.begin(); it != m_blocks.end(); it++)
 		{
 			if (it == m_blocks.begin())
@@ -98,6 +99,7 @@ void Snake::Update(Apple & apple, const float &deltaTime)
 		m_updateTimer = 0.0f;
 	}
 
+	// check for collisions
 	for (std::list<Block*>::iterator it = m_blocks.begin(); it != m_blocks.end(); it++)
 	{
 		if (it != m_blocks.begin())

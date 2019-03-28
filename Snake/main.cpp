@@ -71,6 +71,8 @@ int main(int argc, char ** argv)
 
 			if (PlayAgain()) 
 			{
+				SetUpGame();
+
 				window.Show();
 				snake.GameOver() = false;
 				snake.Score() = 0;
